@@ -1,22 +1,19 @@
-# CLASHCORE v0.2
+# CLASHCORE v0.3 - Online Multiplayer
 
-Polished 2D Battle Arena Prototype.
+2D Battle Arena with PeerJS multiplayer (2-4 players).
+
+## How to play online
+1. One player clicks **HOST** → gets a room code
+2. Others click **JOIN**, enter the code, connect
+3. Host starts the match
+
+Local modes still work too.
 
 ## Controls
-- **P1**: WASD move, F shoot, G dash, H shockwave
-- **P2**: Arrow keys move, / shoot, . dash, , shockwave
+- Move: WASD (P1) / Arrows (P2) — more players get assigned keys or mouse later
+- Shoot / Dash / Shockwave same as before
 
-## Modes
-1. Free-for-All
-2. Team Battle (P1 + P2 vs Bots)
-3. Duel
-4. Bot War
+## Deploy
+Enable GitHub Pages on main branch for live link.
 
-Use [ ] to change bot count, ENTER to start.
-
-In-game: R restart, ESC menu.
-
-## Online
-Enable GitHub Pages on this repo (Settings > Pages > Deploy from main branch) for instant playable link.
-
-True multiplayer (2-4 players online) coming next with PeerJS if requested.
+Note: PeerJS uses free cloud signaling. Works best on same network or with good connections. For production, self-host PeerServer.
